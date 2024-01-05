@@ -1,33 +1,43 @@
 # wpc's Traning Plan
 
 ## KnowLedge Practice
+
 ```latex
   waiting ....
 ```
-## Unsolving Problem
-| Creation Date | Problem | Tag | Link | Difficulty | Solved Date |
-| :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| Jan 5 | Test | None | None | None | *Accepted* |    
-| Jan 5 | Small GCD | math | https://codeforces.com/contest/1900/problem/D | CF_2000 | *Unaccepted* |
+
+## Unsolving Problem1
+
+| Creation Date | Problem   | Tag  | Link                                          | Difficulty | Solved Date  |
+|:-------------:|:---------:|:----:|:---------------------------------------------:|:----------:|:------------:|
+| Jan 5         | Test      | None | None                                          | None       | *Accepted*   |
+| Jan 5         | Small GCD | math | https://codeforces.com/contest/1900/problem/D | CF_2000    | *Unaccepted* |
 
 ## Contests Records
+
 ```latex
   waiting ....
 ```
+
 ## Rating Change
+
 - CodeForce
-```latex
+  
+  ```latex
   Jan_5 0
-```
+  ```
 - AtCoder
-```latex
+  
+  ```latex
   Jan_5 0
-```
+  ```
 - NowCoder
-```latex
+  
+  ```latex
   Jan_5 0
-```
+  ```
 - LuoGu
-```latex
+  
+  ```latex
   Jan_5 516
-```
+  ```
