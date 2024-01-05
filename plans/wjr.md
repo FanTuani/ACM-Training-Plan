@@ -1,5 +1,20 @@
-# wjr
+# wjr's Traning Plan
 
-| Tag | Link | Difficulty | Creation Date | Status |
-| :-: | :--: | :--------: | :-----------: | :----: |
-| tarjan + topo | https://codeforces.com/contest/1900/problem/E  | cf2100 | Jan 5 | unsolved |
+## KnowLedge Practice
+```latex
+  waiting ....
+```
+## Unsolving Problem
+| Creation Date | Problem | Tag | Link | Difficulty | Solved Date |
+| :----------:  | :-----: | :-: | :--: | :--------: | :---------: |
+| Jan_5 | Transitive Graph | tarjan + topo | https://codeforces.com/contest/1900/problem/E  | cf2100 | unsolved |
+
+## Contests Records
+```latex
+  waiting ....
+```
+## Rating Change
+- CodeForce
+```latex
+  Jan_1 1438
+```
