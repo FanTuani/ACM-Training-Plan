@@ -4,12 +4,10 @@
   waiting ....
 ```
 ## Unsolving Problem
-| Creation Date|   Problem    |      Tag     |    Link      |   Difficulty |   Status     |
+| Creation Date | Problem | Tag | Link | Difficulty | Solved Date |
 | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| Jan 5 | Test         | None         | None            |   0       |    *Accepted* |         |      
-|       Jan 5        |        Small GCD      |      math      |        https://codeforces.com/contest/1900/problem/D       |       cf2000      |      *Unaccepted*         |
-|              |              |              |               |             |              |
-
+| Jan 5 | Test | None | None | None | *Accepted* |    
+| Jan 5 | Small GCD | math | https://codeforces.com/contest/1900/problem/D | CF_2000 | *Unaccepted* |
 
 ## Contests Records
 ```latex
@@ -18,17 +16,17 @@
 ## Rating Change
 - CodeForce
 ```latex
-  waiting ....
+  Jan_5 0
 ```
 - AtCoder
 ```latex
-  waiting ....
+  Jan_5 0
 ```
 - NowCoder
 ```latex
-  waiting ....
+  Jan_5 0
 ```
 - LuoGu
 ```latex
-  waiting ....
+  Jan_5 516
 ```
