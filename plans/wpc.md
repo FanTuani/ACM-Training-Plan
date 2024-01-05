@@ -1,6 +1,32 @@
-# wpc
+# wpc's Traning Plan
+## KnowLedge Practice
+```latex
+  waiting ....
+```
+## Unsolving Problem
+| Creation Date|   Problem    |      Tag     |    Link      |   Difficulty |   Status     |
+| :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
+| 2024年1月5日 | Test         | None         | None            |   0       |    *Accepted* |         |      
+|              |              |              |               |             |              |
 
-| Tag | Link | Difficulty | Creation Date | Status |
-| :-: | :--: | :--------: | :-----------: | :----: |
-
-1 2 3 4 5 6 7
+## Contests Records
+```latex
+  waiting ....
+```
+## Rating Change
+- CodeForce
+```latex
+  waiting ....
+```
+- AtCoder
+```latex
+  waiting ....
+```
+- NowCoder
+```latex
+  waiting ....
+```
+- LuoGu
+```latex
+  waiting ....
+```
