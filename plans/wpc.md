@@ -9,9 +9,7 @@
 | Jan 5 | Test         | None         | None            |   0       |    *Accepted* |         |      
 |       Jan 5        |        Small GCD      |      math      |        https://codeforces.com/contest/1900/problem/D       |       cf2000      |      *Unaccepted*         |
 |              |              |              |               |             |              |
-|              |              |              |               |             |              |
-|              |              |              |               |             |              |
-|              |              |              |               |             |              |
+
 
 ## Contests Records
 ```latex
