@@ -6,7 +6,11 @@
 ## Unsolving Problem
 | Creation Date|   Problem    |      Tag     |    Link      |   Difficulty |   Status     |
 | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| 2024年1月5日 | Test         | None         | None            |   0       |    *Accepted* |         |      
+| Jan 5 | Test         | None         | None            |   0       |    *Accepted* |         |      
+|       Jan 5        |        Small GCD      |       容斥       |        https://codeforces.com/contest/1900/problem/D       |       cf2000      |       none         |
+|              |              |              |               |             |              |
+|              |              |              |               |             |              |
+|              |              |              |               |             |              |
 |              |              |              |               |             |              |
 
 ## Contests Records
