@@ -8,6 +8,7 @@
 | Creation Date | Problem | Tag | Link | Difficulty | Solved Date |
 | :----------:  | :-----: | :-: | :--: | :--------: | :---------: |
 | Jan_5 | Transitive Graph | tarjan + topo | https://codeforces.com/contest/1900/problem/E  | cf2100 | unsolved |
+| Jan_19 | Counting Binary Strings | DP | https://codeforces.com/contest/1920/problem/E | cf2100 | unsolved |
 
 ## Contests Records
 ```latex
