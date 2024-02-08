@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;
-const int N = 2e5 + 10, INF = 0x3f3f3f3f3f3f3f;
+const int N = 5e5 + 10, INF = 0x3f3f3f3f3f3f3f;
 vector<int> con[N];
 int dep[N], hson[N], fa[N], sz[N], top[N];
 void dfs(int a, int f) {
@@ -31,6 +31,18 @@ void df(int a) {
         df(t);
     }
 }
+int lca(int a, int b) {
+    while (top[a] != top[b]) {
+        if (dep[top[a]] > dep[top[b]])
+            a = fa[top[a]];
+        else
+            b = fa[top[b]];
+    }
+    if (dep[a] > dep[b])
+        return b;
+    else
+        return a;
+}
 signed main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -48,15 +60,6 @@ signed main() {
     while (q--) {
         int a, b;
         cin >> a >> b;
-        while (top[a] != top[b]) {
-            if (dep[top[a]] > dep[top[b]])
-                a = fa[top[a]];
-            else
-                b = fa[top[b]];
-        }
-        if (dep[a] > dep[b])
-            cout << b << '\n';
-        else
-            cout << a << '\n';
+        cout << lca(a, b) << '\n';
     }
 }
