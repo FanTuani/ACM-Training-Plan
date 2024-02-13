@@ -3,7 +3,7 @@
 using namespace std;
 const int N = 1e5 + 10, INF = 0x3f3f3f3f3f3f3f;
 int n, a[N], tree[4 * N], mark[4 * N];
-void build(int l, int r, int pos) {
+void build(int l = 1, int r = n, int pos = 1) {
     if (l == r) {
         tree[pos] = a[l];
     } else {
@@ -48,14 +48,14 @@ int query(int l, int r, int pos = 1, int cl = 1, int cr = n) {
     }
 }
 signed main() {
-    // ios::sync_with_stdio(false);
-    // cin.tie(0);
+    ios::sync_with_stdio(false);
+    cin.tie(0);
     int q;
     cin >> n >> q;
     for (int i = 1; i <= n; i++) {
         cin >> a[i];
     }
-    build(1, n, 1);
+    build();
     while (q--) {
         int op;
         cin >> op;
