@@ -5,9 +5,9 @@ const int N = 2e5 + 10, INF = 0x3f3f3f3f3f3f3f;
 int n, q, root, mod, t[4 * N], mk[4 * N], top[N], hson[N], dep[N], dn[N], a[N],
     fa[N], sz[N], b[N], mxdn[N], cnt;
 
-void bd(int l, int r, int pos = 1);
-void pd(int pos, int cl, int cr);
-void upd(int l, int r, int x, int pos = 1, int cl = 1, int cr = n);
+void build(int l, int r, int pos = 1);
+void push_down(int pos, int cl, int cr);
+void add(int l, int r, int x, int pos = 1, int cl = 1, int cr = n);
 int query(int l, int r, int pos = 1, int cl = 1, int cr = n);
 vector<int> con[N];
 void dfs(int a, int f) {
@@ -43,14 +43,14 @@ void df(int a) {
 void upd_path(int a, int b, int x) {
     while (top[a] != top[b]) {
         if (dep[top[a]] > dep[top[b]]) {
-            upd(dn[a], dn[top[a]], x);
+            add(dn[a], dn[top[a]], x);
             a = fa[top[a]];
         } else {
-            upd(dn[b], dn[top[b]], x);
+            add(dn[b], dn[top[b]], x);
             b = fa[top[b]];
         }
     }
-    upd(dn[a], dn[b], x);
+    add(dn[a], dn[b], x);
 }
 int query_path(int a, int b) {
     int ans = 0;
@@ -84,7 +84,7 @@ signed main() {
     for (int i = 1; i <= n; i++) {
         a[dn[i]] = b[i];
     }
-    bd(1, n);
+    build(1, n);
     while (q--) {
         int op;
         cin >> op;
@@ -99,7 +99,7 @@ signed main() {
         } else if (op == 3) {
             int s, x;
             cin >> s >> x;
-            upd(dn[s], mxdn[s], x);
+            add(dn[s], mxdn[s], x);
         } else {
             int s;
             cin >> s;
@@ -108,16 +108,16 @@ signed main() {
     }
 }
 
-void bd(int l, int r, int pos) {
+void build(int l, int r, int pos) {
     if (l == r) {
         t[pos] = a[l];
     } else {
         int mid = l + r >> 1;
-        bd(l, mid, pos * 2), bd(mid + 1, r, pos * 2 + 1);
+        build(l, mid, pos * 2), build(mid + 1, r, pos * 2 + 1);
         t[pos] = t[pos * 2] + t[pos * 2 + 1];
     }
 }
-void pd(int pos, int cl, int cr) {
+void push_down(int pos, int cl, int cr) {
     int mid = cl + cr >> 1;
     mk[pos * 2] += mk[pos];
     mk[pos * 2 + 1] += mk[pos];
@@ -125,7 +125,7 @@ void pd(int pos, int cl, int cr) {
     t[pos * 2 + 1] += (cr - mid) * mk[pos];
     mk[pos] = 0;
 }
-void upd(int l, int r, int x, int pos, int cl, int cr) {
+void add(int l, int r, int x, int pos, int cl, int cr) {
     if (l > r)
         swap(l, r);
     if (cr < l or cl > r) {
@@ -136,8 +136,8 @@ void upd(int l, int r, int x, int pos, int cl, int cr) {
             mk[pos] += x;
     } else {
         int mid = cl + cr >> 1;
-        pd(pos, cl, cr);
-        upd(l, r, x, pos * 2, cl, mid), upd(l, r, x, pos * 2 + 1, mid + 1, cr);
+        push_down(pos, cl, cr);
+        add(l, r, x, pos * 2, cl, mid), add(l, r, x, pos * 2 + 1, mid + 1, cr);
         t[pos] = t[pos * 2] + t[pos * 2 + 1];
     }
 }
@@ -150,7 +150,7 @@ int query(int l, int r, int pos, int cl, int cr) {
         return t[pos];
     } else {
         int mid = cl + cr >> 1;
-        pd(pos, cl, cr);
+        push_down(pos, cl, cr);
         return query(l, r, pos * 2, cl, mid) +
                query(l, r, pos * 2 + 1, mid + 1, cr);
     }
