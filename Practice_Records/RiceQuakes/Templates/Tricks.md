@@ -16,4 +16,6 @@
 
 3. `x^x=0`，`x^0=x`
 
-4. **自反性 `A XOR B XOR B = A xor  0 = A`**
+4. **自反性 `A xor B xor B = A xor 0 = A`**
+
+# log2(1e9) < 30
